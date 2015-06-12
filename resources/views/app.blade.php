@@ -17,6 +17,7 @@
    <link href="{{asset('/css/main.css')}}" rel="stylesheet"> 
     <link href="{{asset('/css/coordinador.css')}}" rel="stylesheet"> 
     <link href="{{asset('/css/app.css')}}" rel="stylesheet">
+    <link href="{{asset('/css/jquery-ui.min.css')}}" rel='stylesheet' type='text/css'>  
     <!--<link href="{{asset('/css/style-responsive.css')}}" rel="stylesheet" />-->
 
     <!-- Fonts -->
@@ -72,13 +73,14 @@
 	@yield('content')
 
 	<!-- Scripts -->
+	      
+
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="/js/jquery.min.js"></script>
-<!--    <script src="/js/jquery-ui.min.js"></script> 
-    <script src="/js/coordinador.js"></script>
-    <script src="/js/date.js"></script>        
-	<script src="/js/jFormslider.js"></script> -->
 
+    <script src="/js/jquery-ui.min.js"></script>
+    <!--<script src="/js/main.js"></script>-->
+    <script src="/js/date.js"></script>        
 </body>
 </html>

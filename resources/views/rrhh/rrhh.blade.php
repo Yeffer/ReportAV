@@ -3,8 +3,14 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12">
-            <h3 class="text-center">Dirección</h3>
+            <h3 class="text-center">RRHH</h3>
             <div class="well" >
+   <div class="navbar-collapse" >
+        <ul class="nav navbar-nav">                    
+            <li><a href="inscripcion">INSCRIPCION</a></li>
+        </ul>
+    </div>
+
 <div class="table-responsive">
   <table class="table table-condensed table-bordered table-hover table-striped">  
     <thead>

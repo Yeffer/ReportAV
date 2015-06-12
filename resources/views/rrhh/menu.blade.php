@@ -20,11 +20,9 @@
             </div> -->
             <div class="navbar-collapse" >
                 <ul class="nav navbar-nav">                    
-                    <li><a href="coordinador">COORDINADOR</a></li>
-                    <li><a href="menu">RRHH</a></li> 
-                    <li><a href="tecnologia">TECNOLOGIA</a></li>
-                    <li><a href="financiero">FINANCIERO</a></li> 
-                    <li><a href="direccion">DIRECCIÓN</a></li>                    
+                    <li><a href="cargo">INGRESO CARGO</a></li>
+                    
+                    <li><a href="inscripcion">INGRESO PERSONAL</a></li>                    
                 </ul>
             </div>
         </div>

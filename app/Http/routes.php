@@ -19,6 +19,10 @@ Route::get('tecnologia', 'TecnologiaController@index');
 Route::get('financiero', 'FinancieroController@index');
 Route::get('direccion', 'DireccionController@index');
 Route::get('coordinador', 'CoordinadorController@index');
+Route::get('inscripcion','InscripcionController@index');
+Route::get('menu','MenuController@index');
+Route::get('cargo','CargoController@index');
+Route::get('campaña','CampañaController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

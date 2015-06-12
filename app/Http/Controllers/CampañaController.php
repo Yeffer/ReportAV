@@ -1,6 +1,6 @@
 <?php namespace App\Http\Controllers;
 
-class RrhhController extends Controller {
+class CampañaController extends Controller {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -31,6 +31,7 @@ class RrhhController extends Controller {
 
 	public function index()
 	{
-		return View('rrhh.rrhh');
-	}   	 
+		return View('rrhh.campaña');
+	}   
+	
 } 
