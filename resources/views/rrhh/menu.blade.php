@@ -20,9 +20,9 @@
             </div> -->
             <div class="navbar-collapse" >
                 <ul class="nav navbar-nav">                    
-                    <li><a href="cargo">INGRESO CARGO</a></li>
+                    <li><a href="cargo">REGISTRO CARGO</a></li>
                     
-                    <li><a href="inscripcion">INGRESO PERSONAL</a></li>                    
+                    <li><a href="inscripcion">REGISTRO PERSONAL</a></li>                    
                 </ul>
             </div>
         </div>
