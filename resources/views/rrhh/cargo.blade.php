@@ -15,6 +15,7 @@
                 <h2>CREAR PERFIL</h2>
                 <ul class="nav navbar-nav">                    
                     <li><a href="menu">RRHH</a></li>
+                    <li><a href="perfil">PERFILES</a></li>
                 </ul>
                 <hr class="star-primary">
             </div>
@@ -22,8 +23,8 @@
         
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">             
-                    <form id="Registro" action="/form/save" name="Registro" method='post' style="aliner:left"> 
+            <div class="col-lg-8 col-lg-offset-2">
+                    <form id="Registro" action="/rrhh/save" name="Registro" method='post' style="aliner:left"> 
                             <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">                           
                             <input name="data[id]" type="hidden" id="id" placeholder="Numero De Documento"/>
                                 <h1></h1>
@@ -33,22 +34,31 @@
                                     <input class="form-control" name="data[detallePerfil]" type="text" id="detallePerfil" placeholder="Codigo de Perfil"/>
                                 </div>
                             </div> 
+                            <div class="form-group col-xs-12 floating-label-form-group controls">                                                        
+                                <label name="tipoDocumento"  type="text" class="col-md-4 control-label">Tipo</label>
+                                <div class="col-md-6">                                                                                                                                                                                                                                                                
+                                    <select name="data[tipoPerfil]" type="text" id="tipoPerfil" class="form-control">
+                                        <option>--Seleccione Una Opción--</option> 
+                                        <option value="gerente">Gerente</option>
+                                        <option value="jefe">Jefe</option>
+                                        <option value="supervisor">Supervisor</option>
+                                        <option value="coordinador">Coordinador</option>
+                                        <option value="analista">Analista</option>
+                                        <option value="asesor">Asesor</option>
+                                    </select>  
+                                </div>
+                            </div>
                             <div class="form-group col-xs-12 floating-label-form-group controls">                            
                                 <label name="Perfil"  type="text" data-icon="u" class="col-md-4 control-label">Detalle:</label>                                          
                                 <div class="col-md-6">                                                                                                                                                                                                                                                                                
-                                    <input class="form-control" name="data[detallePerfil]" type="text" id="detallePerfil" placeholder="Detalle"/>
+                                    <input class="form-control" name="data[detallePerfil]" type="text" id="detallePerfil" placeholder="Detalle De Perfil"/>
                                 </div>
                             </div>     
+                      
                             <div class="form-group col-xs-12 floating-label-form-group controls">                            
-                                <label name="detallePerfil" type="text"  data-icon="u" class="col-md-4 control-label">Nivel:</label>  
+                                <label class="col-md-4 control-label" type="text"  data-icon="u">Salario Básico:</label>  
                                 <div class="col-md-6">                                                                                                                                                                                                                                                                                
-                                    <input class="form-control" name="data[nivel]" type="text" id="nivel" placeholder="Nivel"/>                                
-                                </div>
-                            </div> 
-                            <div class="form-group col-xs-12 floating-label-form-group controls">                            
-                                <label class="col-md-4 control-label" type="text"  data-icon="u">Salario:</label>  
-                                <div class="col-md-6">                                                                                                                                                                                                                                                                                
-                                    <input class="form-control" name="data[salario]" type="text" id="salario" placeholder="Salario"/>
+                                    <input class="form-control" name="data[salarioBasico]" type="text" id="salarioBasico" placeholder="Salario Básico"/>
                                 </div>
                             </div> 
                             <div class="form-group col-xs-12 floating-label-form-group controls">                            
@@ -57,10 +67,16 @@
                                     <input class="form-control" name="data[variable]" type="text" id="variable" placeholder="Variable"/>
                                 </div>
                             </div> 
+                                  <div class="form-group col-xs-12 floating-label-form-group controls">                            
+                                <label class="col-md-4 control-label" type="text"  data-icon="u">Pago Perfil:</label>
+                                <div class="col-md-6">                                                                                                                                                                                                                                                                                
+                                    <input class="form-control" name="data[pagoPerfil]" type="text" id="variable" placeholder="Pago De Perfil"/>
+                                </div>
+                            </div>
                             <div class="form-group col-xs-12 floating-label-form-group controls">                            
-                                    <label type="text" class="col-md-4 control-label" ></label>
+                                    <label type="text" class="col-md-4 control-label"></label>
                                     <div class="col-md-6">                                                                                                                                                                                                                                                                                                                                                                                                                
-                                        <input type="submit" name="crear" value="CREAR" class="boton"/>                                 
+                                        <input type="submit" name="crear" value="GUARDAR" class="boton"/>                                 
                                     </div>
                                 </div>                                                           
                            </form>                     

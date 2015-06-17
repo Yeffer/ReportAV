@@ -22,7 +22,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">             
-                    <form id="Registro" action="/form/save" name="Registro" method='post' style="aliner:left"> 
+                    <form id="Registro" action="#" name="Registro" method='post' style="aliner:left"> 
                         <ul class="col-lg-8 col-lg-offset-2">
                             <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">                           
                                 <input name="data[id]" type="hidden" id="id" placeholder="Numero De Documento"/>

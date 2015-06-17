@@ -20,12 +20,19 @@ Route::get('financiero', 'FinancieroController@index');
 Route::get('direccion', 'DireccionController@index');
 Route::get('coordinador', 'CoordinadorController@index');
 Route::get('inscripcion','InscripcionController@index');
+//Route::get('rrhh/save','InscripcionController@index')
 Route::get('menu','MenuController@index');
 Route::get('cargo','CargoController@index');
 Route::get('campaña','CampañaController@index');
+Route::get('perfil','PerfilController@index');
+
+//Guardar Datos Formulario De Perfiles
+Route::post('rrhh/save', 'CargoController@save');
+
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
 
+Route::get('searchUser', 'WelcomeController@SearchUser');

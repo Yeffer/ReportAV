@@ -21,13 +21,13 @@
                 <hr class="star-primary">
             </div>
         </div>
-<div class="container">
+      <div class="container">
         <div class="row">
             <div class="col-lg-12 col-lg-offset-0">             
-                    <form id="Registro" action="/form/save" name="Registro" method='post' style="aliner:left"> 
+                    <form id="Registro" action="#" name="Registro" method='post' style="aliner:left"> 
                         <ul class="col-lg-8 col-lg-offset-2">
                             <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
-                            <li id="lista">                            
+                            <li>                            
                                 <input name="data[id]" type="hidden" id="id" placeholder="Numero De Documento"/>
                                 <h1></h1>
                               <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -129,7 +129,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li id="lista">
+                            <li>
                                 <h1></h1>
                                   <div class="form-group col-xs-12 floating-label-form-group controls">                            
                                     <label name="estadoCivil" type="text"  class="col-md-4 control-label">Estado Civil</label>
@@ -211,4 +211,7 @@
             </div>
         </div>
  </section>            
+
+
+ <script src="/js/main.js"></script>
 @endsection

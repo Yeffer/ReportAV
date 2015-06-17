@@ -33,5 +33,36 @@ class CargoController extends Controller {
 	{
 		return View('rrhh.cargo');
 	}   
+/*
+	foreach ($queries as $query)
+	{
+	    $results[] = [ 'value' => $query->codigo, 'id' => $query->id,'codigo' => $query->codigo,'nombre' => $query->nombre,'salario' => $query->salario,'variable' => $query->variable,'pago' => $query->pago,'fecha' => $query->fecha];
+	}        
+        return response()->json($results);
+    }
+/
+	public function save() {
+      
+        $data = Request::input('data');
+        /*
+        if(!empty($data['codigo'])){
+            $user = DatosCargo::find($data['id']);            
+        }else{
+            $user = new DatosCargo();
+        }
+
+        $user->codigo = $data['codigo'];
+        $user->nombre = $data['nombre'];
+        $user->salario = $data['salario'];
+        $user->variable = $data['variable'];
+        $user->pago = $data['pago'];
+        $user->fecha = $data['fecha'];
+        $user->save();
+        
+        return View('rrhh.cargo');
+      
+    }*/
+ 
 	
 } 
+

@@ -5,7 +5,7 @@
  */
 $(document).ready(function(){    
     
-    $( "#buscarCedula" ).autocomplete({
+   $( "#buscarCedula" ).autocomplete({
           source: "searchUser",
       minLength: 3,
       select: function(event, ui) {
@@ -30,25 +30,11 @@ $(document).ready(function(){
                 $('#estadoCivil').val(ui.item.estadoCivil);
                 $('#barrio').val(ui.item.barrio);
                 $('#email').val(ui.item.email);
-                $('#profesion').val(ui.item.profesion);
-                $('#examenMedico').val(ui.item.examenMedico);
-                $('#referenciacion').val(ui.item.referenciacion);
-                $('#informePsicologico').val(ui.item.informePsicologico);
-                $('#entrevista1').val(ui.item.entrevista1);
-                $('#certificadosLaborales').val(ui.item.certificadosLaborales);
-                $('#certificadoEstudio').val(ui.item.certificadoEstudio);
-                $('#libretaMilitar').val(ui.item.libretaMilitar);
-                $('#pasadoJudicial').val(ui.item.pasadoJudicial);
-                $('#fotocopiaCedula').val(ui.item.fotocopiaCedula);
-                $('#hojaVida').val(ui.item.hojaVida);
-                $('#certificadoEps').val(ui.item.certificadoEps);
-                $('#certificadoAfp').val(ui.item.certificadoAfp);
-                $('#certificadoPension').val(ui.item.certificadoPension);
-                $('#certificadoLaboral').val(ui.item.certificadoLaboral);
-                $('#fecha').val(ui.item.fecha);
+                $('#profesion').val(ui.item.profesion);               
       }
 
     });
+
     var options={
 
                 width:800,

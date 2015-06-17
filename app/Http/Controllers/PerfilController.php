@@ -1,15 +1,6 @@
-<?php
-namespace App\Http\Controllers;
+<?php namespace App\Http\Controllers;
 
-use App\Http\Requests\FormTestValidation;
-use App\Models\DatosUsuario;
-use Request;
-use Auth;
-use Session;
-use DB;
-
-
-class WelcomeController extends Controller {
+class PerfilController extends Controller {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -30,7 +21,6 @@ class WelcomeController extends Controller {
 	public function __construct()
 	{
 		$this->middleware('guest');
-		//auth
 	}
 
 	/**
@@ -38,9 +28,10 @@ class WelcomeController extends Controller {
 	 *
 	 * @return Response
 	 */
+
 	public function index()
 	{
-		return view('home.home');
+		return View('rrhh.perfil');
 	}   
-
-}
+	
+} 
