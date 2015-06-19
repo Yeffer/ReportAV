@@ -19,9 +19,9 @@
                 <a class="navbar-brand" href="index.html"></a>
             </div> -->
             <div class="navbar-collapse" >
-                <ul class="nav navbar-nav">                    
+                <ul class="nav nav-justified">                    
                     <li><a href="coordinador">COORDINADOR</a></li>
-                    <li><a href="menu">RRHH</a></li> 
+                    <li><a href="rrhh">RRHH</a></li> 
                     <li><a href="tecnologia">TECNOLOGIA</a></li>
                     <li><a href="financiero">FINANCIERO</a></li> 
                     <li><a href="direccion">DIRECCIÓN</a></li>                    

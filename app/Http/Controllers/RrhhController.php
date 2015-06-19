@@ -20,7 +20,7 @@ class RrhhController extends Controller {
 	 */
 	public function __construct()
 	{
-		$this->middleware('guest');
+		$this->middleware('auth');
 	}
 
 	/**
@@ -31,6 +31,6 @@ class RrhhController extends Controller {
 
 	public function index()
 	{
-		return View('rrhh.rrhh');
+		return View('rrhh.menu');
 	}   	 
 } 

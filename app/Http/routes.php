@@ -12,23 +12,24 @@
 */
 
 Route::get('/', 'WelcomeController@index');
-
 Route::get('home', 'HomeController@index');
+//Route::get('home/home', 'HomeController@index');
 Route::get('rrhh', 'RrhhController@index');
+Route::get('cargo', 'CargoController@index');
 Route::get('tecnologia', 'TecnologiaController@index');
 Route::get('financiero', 'FinancieroController@index');
 Route::get('direccion', 'DireccionController@index');
 Route::get('coordinador', 'CoordinadorController@index');
 Route::get('inscripcion','InscripcionController@index');
-//Route::get('rrhh/save','InscripcionController@index')
-Route::get('menu','MenuController@index');
-Route::get('cargo','CargoController@index');
 Route::get('campaña','CampañaController@index');
 Route::get('perfil','PerfilController@index');
 
 //Guardar Datos Formulario De Perfiles
-Route::post('rrhh/save', 'CargoController@save');
 
+Route::post('rrhh/save', 'CargoController@save');
+Route::post('rrhh/guardar', 'InscripcionController@guardar');
+
+/**********************/
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

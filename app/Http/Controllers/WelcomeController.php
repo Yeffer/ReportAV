@@ -29,7 +29,7 @@ class WelcomeController extends Controller {
 	 */
 	public function __construct()
 	{
-		$this->middleware('guest');
+		$this->middleware('auth');
 		//auth
 	}
 
@@ -42,5 +42,10 @@ class WelcomeController extends Controller {
 	{
 		return view('home.home');
 	}   
+
+	/*public function rrhh()
+	{
+		return View('home.rrhh');
+	} */  
 
 }

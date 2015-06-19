@@ -1,5 +1,13 @@
-<?php namespace App\Http\Controllers;
+<?php 
+namespace App\Http\Controllers;
 
+
+use App\Http\Requests\FormTestValidation;
+use App\Models\DatosCargo;
+use Request;
+use Auth;
+use Session;
+use DB;
 class CargoController extends Controller {
 
 	/*
@@ -20,7 +28,7 @@ class CargoController extends Controller {
 	 */
 	public function __construct()
 	{
-		$this->middleware('guest');
+		$this->middleware('auth');
 	}
 
 	/**
@@ -33,36 +41,52 @@ class CargoController extends Controller {
 	{
 		return View('rrhh.cargo');
 	}   
-/*
-	foreach ($queries as $query)
-	{
-	    $results[] = [ 'value' => $query->codigo, 'id' => $query->id,'codigo' => $query->codigo,'nombre' => $query->nombre,'salario' => $query->salario,'variable' => $query->variable,'pago' => $query->pago,'fecha' => $query->fecha];
-	}        
-        return response()->json($results);
+
+
+  	public function SearchUser(){	
+        $term =  Request::input('term');
+        //$term = Input::get('term');
+        
+        
+	$results = array();
+	
+	$queries = DB::table('usuario')
+		->where('cedula', 'LIKE', '%'.$term.'%')		
+		->get();
+	
+		foreach ($queries as $query)
+		{
+		    $results[] = [ 'value' => $query->codigo, 'id' => $query->id,'codigo' => $query->codigo,'tipo' => $query->tipo,'descripcion' => $query->descripcion,'salarioBasico' => $query->salarioBasico,'pago' => $query->pago];
+		}        
+	        return response()->json($results);
     }
-/
+
 	public function save() {
       
-        $data = Request::input('data');
-        /*
-        if(!empty($data['codigo'])){
+   $data = Request::input('data');
+   
+        
+      if ( empty($data['codigo']) ) {
+            Session::flash('error', 'El campo codigo esta vacio');
+            return view('rrhh.cargo');
+        }
+         if(!empty($data['id'])){
             $user = DatosCargo::find($data['id']);            
         }else{
             $user = new DatosCargo();
         }
-
         $user->codigo = $data['codigo'];
-        $user->nombre = $data['nombre'];
-        $user->salario = $data['salario'];
+        $user->tipo = $data['tipo'];
+        $user->descripcion = $data['descripcion'];
+        $user->salarioBasico = $data['salarioBasico'];
         $user->variable = $data['variable'];
         $user->pago = $data['pago'];
-        $user->fecha = $data['fecha'];
+        $user->id_users =  Auth::id();       
         $user->save();
         
         return View('rrhh.cargo');
-      
-    }*/
+   
+    }
  
 	
 } 
-

@@ -79,8 +79,12 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="/js/jquery.min.js"></script>
 
+    <script src="/js/jquery-2.1.4.min.js"></script>
+
     <script src="/js/jquery-ui.min.js"></script>
-    <!--<script src="/js/main.js"></script>-->
+    <script src="/js/main.js"></script> 
     <script src="/js/date.js"></script>        
+    <script src="/js/jFormslider.js"></script> 
+
 </body>
 </html>

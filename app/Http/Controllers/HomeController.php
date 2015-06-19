@@ -22,7 +22,7 @@ class HomeController extends Controller {
 	{
 		$this->middleware('auth');
 	}
-
+ 	//auth
 	/**
 	 * Show the application dashboard to the user.
 	 *
@@ -30,7 +30,7 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('home');
+		return view('home.home');
 	}
 
 }

@@ -16,7 +16,7 @@
             <div class="col-lg-12 text-center">
                 <h2>REGISTRO HV</h2>
                 <ul class="nav navbar-nav">                    
-                    <li><a href="menu">RRHH</a></li>
+                    <li><a href="rrhh">RRHH</a></li>
                 </ul>
                 <hr class="star-primary">
             </div>
@@ -24,7 +24,7 @@
       <div class="container">
         <div class="row">
             <div class="col-lg-12 col-lg-offset-0">             
-                    <form id="Registro" action="#" name="Registro" method='post' style="aliner:left"> 
+                    <form id="Registro" action="/rrhh/guardar" name="Registro" method='post' style="aliner:left"> 
                         <ul class="col-lg-8 col-lg-offset-2">
                             <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                             <li>                            
@@ -42,7 +42,7 @@
                                         <select name="data[tipoDocumento]" type="text" id="tipoDocumento" class="form-control">
                                             <option>--Seleccione Una Opción--</option> 
                                             <option value="CC">Cédula De Ciudadania</option>
-                                            <option value="CE-">Cédula De Extranjería</option>
+                                            <option value="CE">Cédula De Extranjería</option>
                                             <option value="NUIP">Numero Unico Identificaión Persona</option>
                                             <option value="TI">Tarjeta De Identidad</option>
                                         </select>  
@@ -150,12 +150,6 @@
                                         <input class="form-control" name="data[direccion]" type="text" id="direccion"  placeholder="Direccion"/>
                                     </div>
                                 </div>                               
-                                <div class="form-group col-xs-12 floating-label-form-group controls">                            
-                                    <label name="barrio" type="text"  class="col-md-4 control-label">Barrio</label>
-                                    <div class="col-md-6">                                                                                                                                                                                                                                                                                                                                                                                                                                                
-                                        <input class="form-control" name="data[barrio]" type="text" id="barrio"  placeholder="Barrio"/>
-                                    </div>
-                                </div>
                                  <div class="form-group col-xs-12 floating-label-form-group controls">                            
                                     <label name="telefono1" type="text"  class="col-md-4 control-label">Teléfono1</label>
                                     <div class="col-md-6">                                                                                                                                                                                                                                                                                                                

@@ -2,6 +2,9 @@
 
 @section('content')
 
+<div>
+    <input id="buscarCargo" placeholder="Buscar">
+</div>
 
 <?php if (Session::get('error')) { ?>
 <div class="alert alert-danger" >
@@ -14,7 +17,7 @@
             <div class="col-lg-12 text-center">
                 <h2>CREAR PERFIL</h2>
                 <ul class="nav navbar-nav">                    
-                    <li><a href="menu">RRHH</a></li>
+                    <li><a href="rrhh">RRHH</a></li>
                     <li><a href="perfil">PERFILES</a></li>
                 </ul>
                 <hr class="star-primary">
@@ -31,13 +34,13 @@
                             <div class="form-group col-xs-12 floating-label-form-group controls">                            
                                 <label name="Perfil"  type="text" data-icon="u" class="col-md-4 control-label">Codigo:</label>
                                 <div class="col-md-6">                                                                                                                                                                                                                                                                                
-                                    <input class="form-control" name="data[detallePerfil]" type="text" id="detallePerfil" placeholder="Codigo de Perfil"/>
+                                    <input class="form-control" name="data[codigo]" type="text" id="codigo" placeholder="Codigo de Perfil"/>
                                 </div>
                             </div> 
                             <div class="form-group col-xs-12 floating-label-form-group controls">                                                        
-                                <label name="tipoDocumento"  type="text" class="col-md-4 control-label">Tipo</label>
+                                <label name="tipoDocumento"  type="text" class="col-md-4 control-label">Tipo Perfil:</label>
                                 <div class="col-md-6">                                                                                                                                                                                                                                                                
-                                    <select name="data[tipoPerfil]" type="text" id="tipoPerfil" class="form-control">
+                                    <select name="data[tipo]" type="text" id="tipo" class="form-control">
                                         <option>--Seleccione Una Opción--</option> 
                                         <option value="gerente">Gerente</option>
                                         <option value="jefe">Jefe</option>
@@ -51,14 +54,14 @@
                             <div class="form-group col-xs-12 floating-label-form-group controls">                            
                                 <label name="Perfil"  type="text" data-icon="u" class="col-md-4 control-label">Detalle:</label>                                          
                                 <div class="col-md-6">                                                                                                                                                                                                                                                                                
-                                    <input class="form-control" name="data[detallePerfil]" type="text" id="detallePerfil" placeholder="Detalle De Perfil"/>
+                                    <input class="form-control" name="data[descripcion]" type="text" id="descripcion" placeholder="Detalle De Perfil"/>
                                 </div>
                             </div>     
                       
                             <div class="form-group col-xs-12 floating-label-form-group controls">                            
                                 <label class="col-md-4 control-label" type="text"  data-icon="u">Salario Básico:</label>  
                                 <div class="col-md-6">                                                                                                                                                                                                                                                                                
-                                    <input class="form-control" name="data[salarioBasico]" type="text" id="salarioBasico" placeholder="Salario Básico"/>
+                                    <input class="form-control" name="data[salarioBasico]" type="text" id="salarioBasicosalarioBasico" placeholder="Salario Básico"/>
                                 </div>
                             </div> 
                             <div class="form-group col-xs-12 floating-label-form-group controls">                            
@@ -70,13 +73,13 @@
                                   <div class="form-group col-xs-12 floating-label-form-group controls">                            
                                 <label class="col-md-4 control-label" type="text"  data-icon="u">Pago Perfil:</label>
                                 <div class="col-md-6">                                                                                                                                                                                                                                                                                
-                                    <input class="form-control" name="data[pagoPerfil]" type="text" id="variable" placeholder="Pago De Perfil"/>
+                                    <input class="form-control" name="data[pago]" type="text" id="pago" placeholder="Pago De Perfil"/>
                                 </div>
                             </div>
                             <div class="form-group col-xs-12 floating-label-form-group controls">                            
                                     <label type="text" class="col-md-4 control-label"></label>
                                     <div class="col-md-6">                                                                                                                                                                                                                                                                                                                                                                                                                
-                                        <input type="submit" name="crear" value="GUARDAR" class="boton"/>                                 
+                                        <input type="submit" name="Registro" value="GUARDAR" class="btn btn-primary"/>                                           
                                     </div>
                                 </div>                                                           
                            </form>                     
@@ -84,8 +87,5 @@
                     </div>
                 </div>        
  </section>            
-
- 
-
 @endsection
 
