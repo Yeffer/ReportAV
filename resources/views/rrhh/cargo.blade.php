@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div>
+<!--<div>
     <input id="buscarCargo" placeholder="Buscar">
-</div>
+</div> -->
 
 <?php if (Session::get('error')) { ?>
 <div class="alert alert-danger" >
@@ -17,8 +17,8 @@
             <div class="col-lg-12 text-center">
                 <h2>CREAR PERFIL</h2>
                 <ul class="nav navbar-nav">                    
-                    <li><a href="rrhh">RRHH</a></li>
-                    <li><a href="perfil">PERFILES</a></li>
+                    <li><a href="../rrhh">RRHH</a></li>
+                    <li><a href="../perfil">PERFILES</a></li>
                 </ul>
                 <hr class="star-primary">
             </div>

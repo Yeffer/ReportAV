@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-10">
-            <h3 class="text-center">Asesor</h3>
+            <h3 class="text-center">COORDINADOR</h3>
             <div class="well" >
 <div class="table-responsive">
   <table class="table table-condensed table-bordered table-hover">  

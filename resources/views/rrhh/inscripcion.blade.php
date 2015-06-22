@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div>
+<!--<div>
     <input id="buscarCedula" placeholder="Buscar">
-</div><br><br>
+</div>-->
 <?php if (Session::get('error')) { ?>
 <div class="alert alert-danger" >
     <?php echo Session::get('error') ?>
@@ -16,7 +16,8 @@
             <div class="col-lg-12 text-center">
                 <h2>REGISTRO HV</h2>
                 <ul class="nav navbar-nav">                    
-                    <li><a href="rrhh">RRHH</a></li>
+                    <li><a href="../rrhh">RRHH</a></li>
+                    <li><a href="../personal">PERSONAL</a></li>
                 </ul>
                 <hr class="star-primary">
             </div>

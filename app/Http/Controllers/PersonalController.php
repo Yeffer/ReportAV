@@ -1,6 +1,14 @@
-<?php namespace App\Http\Controllers;
+<?php 
+namespace App\Http\Controllers;
 
-class PerfilController extends Controller {
+/*
+use App\Http\Requests\FormTestValidation;
+use App\Models\DatosCargo;
+use Request;
+use Auth;
+use Session;
+use DB; */
+class PersonalController extends Controller {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -31,12 +39,6 @@ class PerfilController extends Controller {
 
 	public function index()
 	{
-		return View('rrhh.perfil');
-	}  
-	/* public function index()
-   {   		
-        //$codigo = User::all();
-        return View('rrhh.perfil');/*->with('codigo', $perfil);
-   }*/
-	
+		return View('rrhh.personal');
+	}   
 } 

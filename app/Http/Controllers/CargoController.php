@@ -42,7 +42,6 @@ class CargoController extends Controller {
 		return View('rrhh.cargo');
 	}   
 
-
   	public function SearchUser(){	
         $term =  Request::input('term');
         //$term = Input::get('term');
@@ -50,8 +49,8 @@ class CargoController extends Controller {
         
 	$results = array();
 	
-	$queries = DB::table('usuario')
-		->where('cedula', 'LIKE', '%'.$term.'%')		
+	$queries = DB::table('perfil')
+		->where('codigo', 'LIKE', '%'.$term.'%')		
 		->get();
 	
 		foreach ($queries as $query)
@@ -71,22 +70,22 @@ class CargoController extends Controller {
             return view('rrhh.cargo');
         }
          if(!empty($data['id'])){
-            $user = DatosCargo::find($data['id']);            
+            $codigo = DatosCargo::find($data['id']);            
         }else{
-            $user = new DatosCargo();
+            $codigo = new DatosCargo();
         }
-        $user->codigo = $data['codigo'];
-        $user->tipo = $data['tipo'];
-        $user->descripcion = $data['descripcion'];
-        $user->salarioBasico = $data['salarioBasico'];
-        $user->variable = $data['variable'];
-        $user->pago = $data['pago'];
-        $user->id_users =  Auth::id();       
-        $user->save();
+        $codigo->codigo = $data['codigo'];
+        $codigo->tipo = $data['tipo'];
+        $codigo->descripcion = $data['descripcion'];
+        $codigo->salarioBasico = $data['salarioBasico'];
+        $codigo->variable = $data['variable'];
+        $codigo->pago = $data['pago'];
+        $codigo->id_users =  Auth::id();       
+        $codigo->save();
         
-        return View('rrhh.cargo');
+       return View('rrhh.cargo');
+       /* $codigo = codigo::all();
+        return View::make('rrhh.perfil')->with('codigo', $codigo);*/
    
     }
- 
-	
 } 
