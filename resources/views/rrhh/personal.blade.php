@@ -18,6 +18,7 @@
             <th>#</th>
             <th>CEDULA</th>
             <th>NOMBRE</th>
+            <th>CAMPAÑA</th>
             <th>CARGO</th>
             <th>SALARIO</th>                                          
         </tr>                 
@@ -27,13 +28,15 @@
             <td>1</td>
             <td>796301415</td>
             <td>Camila</td> 
+            <td>Campaña #45</td> 
             <td>Asistente Personal</td>                        
             <td>5000000</td>                    
         </tr>
         <tr>
             <td>2</td>
             <td>796301415</td>
-            <td>Prueba</td> 
+            <td>Prueba</td>             
+            <td>Campaña #30</td> 
             <td>Asistente Personal</td>                        
             <td>5000000</td>                    
         </tr>
@@ -41,6 +44,7 @@
             <td>3</td>
             <td>796301415</td>
             <td>Adriana</td> 
+            <td>Campaña #54</td> 
             <td>Asistente Personal</td>                        
             <td>5000000</td>                     
         </tr>
@@ -48,6 +52,7 @@
             <td>4</td>
             <td>796301415</td>
             <td>Prueba 2</td> 
+            <td>Campaña #22</td> 
             <td>Asistente Personal</td>                        
             <td>5000000</td>                    
         </tr>
@@ -55,6 +60,7 @@
             <td>5</td>
             <td>796301415</td>
             <td>Nadie</td> 
+            <td>Campaña #70</td> 
             <td>Asistente Personal</td>                        
             <td>5000000</td>                     
         </tr>

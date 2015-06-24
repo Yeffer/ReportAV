@@ -85,7 +85,41 @@
                            </form>                     
                         </div>
                     </div>
-                </div>        
+                </div>   
+
+    <!--    <div class="table-responsive"> 
+    <table class="table table-condensed table-bordered table-hover table-striped">
+     <thead>
+        <tr>
+            <th>#</th>
+            <th>CODIGO</th>
+            <th>NOMBRE</th>
+            <th>SALARIO</th>
+            <th>VARIABLE</th>
+            <th>VALOR</th>                    
+        </tr>                 
+    </thead>
+     <tbody>
+        <tr>
+            <td>1</td>
+            <td>PPCRC–LCS01</td>
+            <td>LÏDER DE CENTRO DE CONTACTO Y SULUCION- NIVEL 01</td> 
+            <td>4200000</td>            
+            <td>1200000</td>           
+            <td>5000000</td>                    
+        </tr>
+         <tr>
+            <td>3</td>
+            <td>PPCRC–LCS03</td>
+            <td>LÏDER DE CENTRO DE CONTACTO Y SULUCION- NIVEL 03</td> 
+            <td>4200000</td>            
+            <td>1200000</td>           
+            <td>5000000</td>                     
+        </tr>
+    </tbody>        
+</table>     
+</div>-->
+
  </section>            
 @endsection
 

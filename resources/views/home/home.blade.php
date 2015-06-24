@@ -22,7 +22,7 @@
                 <ul class="nav nav-justified">                    
                     <li><a href="coordinador">COORDINADOR</a></li>
                     <li><a href="rrhh">RRHH</a></li> 
-                    <li><a href="tecnologia">TECNOLOGIA</a></li>
+                    <li><a href="tecnologia">TECNOLOGÍA</a></li>
                     <li><a href="financiero">FINANCIERO</a></li> 
                     <li><a href="direccion">DIRECCIÓN</a></li>                    
                 </ul>

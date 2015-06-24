@@ -32,11 +32,30 @@ class PerfilController extends Controller {
 	public function index()
 	{
 		return View('rrhh.perfil');
-	}  
-	/* public function index()
-   {   		
-        //$codigo = User::all();
-        return View('rrhh.perfil');/*->with('codigo', $perfil);
-   }*/
+	/*	$DatosCargo = User::all();
+    return View::make('rrhh.perfil')->with('DatosCargo', $DatosCargo);*/
+
+	}   
+
+ 	/*public function SearchUser(){	
+        $term =  Request::input('term');
+        //$term = Input::get('term');
+        
+        
+	$results = array();
 	
-} 
+	$queries = DB::table('perfil')
+		->where('codigo', 'LIKE', '%'.$term.'%')		
+		->get();
+	
+		foreach ($queries as $query)
+		{
+		    $results[] = [ 'value' => $query->codigo, 'id' => $query->id,'codigo' => $query->codigo,'tipo' => $query->tipo,'descripcion' => $query->descripcion,'salarioBasico' => $query->salarioBasico,'pago' => $query->pago];
+		}        
+	        return response()->json($results);
+    }*/
+
+}
+
+
+

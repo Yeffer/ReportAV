@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\FormTestValidation;
 use App\Models\DatosCargo;
+
+//use Illuminate\Database\Eloquent\Model;
+
 use Request;
 use Auth;
 use Session;
@@ -37,12 +40,17 @@ class CargoController extends Controller {
 	 * @return Response
 	 */
 
-	public function index()
+	/*public function index()
 	{
 		return View('rrhh.cargo');
-	}   
+	} */  
 
-  	public function SearchUser(){	
+	  public function index()
+   {     
+        return View('rrhh.cargo');
+  } 
+
+  public function SearchUser(){	
         $term =  Request::input('term');
         //$term = Input::get('term');
         
@@ -83,9 +91,9 @@ class CargoController extends Controller {
         $codigo->id_users =  Auth::id();       
         $codigo->save();
         
-       return View('rrhh.cargo');
-       /* $codigo = codigo::all();
-        return View::make('rrhh.perfil')->with('codigo', $codigo);*/
+        return View('rrhh.cargo');
+        //$codigo = codigo::all();
+        //return View::make('rrhh/perfil')->with('codigo', $codigo);
    
     }
 } 
