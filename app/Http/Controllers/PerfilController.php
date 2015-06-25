@@ -31,9 +31,17 @@ class PerfilController extends Controller {
 
 	public function index()
 	{
-		return View('rrhh.perfil');
-	/*	$DatosCargo = User::all();
-    return View::make('rrhh.perfil')->with('DatosCargo', $DatosCargo);*/
+	//	return View('rrhh.perfil');
+		
+
+    return View('rrhh.perfil')->with('datos', $term);
+
+	
+		foreach ($queries as $query)
+		{
+		    $results[] = [ 'value' => $query->codigo, 'id' => $query->id,'codigo' => $query->codigo,'tipo' => $query->tipo,'descripcion' => $query->descripcion,'salarioBasico' => $query->salarioBasico,'pago' => $query->pago];
+		}        
+	        return response()->json($results);
 
 	}   
 

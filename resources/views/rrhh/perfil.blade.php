@@ -67,6 +67,27 @@
 
 	</tbody>    
 </table>
+<table>
+		<tr>
+			<th>#</th>
+			<th>CODIGO</th>
+			<th>NOMBRE</th>
+			<th>SALARIO</th>
+			<th>VARIABLE</th>
+			<th>VALOR</th>                    
+		</tr>  
+    @foreach($datos as $key => $value)
+        <tr>
+            <td>{{ $value->id }}</td>
+            <td>{{ $value->codigo }}</td>
+            <td>{{ $value->nombre }}</td>
+            <td>{{ $value->salario }}</td>
+            <td>{{ $value->variable }}</td>
+            <td>{{ $value->valor }}</td>
+        </tr>
+    @endforeach
+
+</table>
 	<ul class="pagination">
 			  <li><a href="#">&laquo;</a></li>
 			  <li><a href="#">1</a></li>

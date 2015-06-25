@@ -11,6 +11,7 @@
 |
 */
 //Guardar Datos Formulario De Perfiles
+Route::resource('post', 'PostController');
 
 Route::post('rrhh/save', 'CargoController@save');
 Route::post('rrhh/guardar', 'InscripcionController@guardar');

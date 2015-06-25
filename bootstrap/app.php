@@ -40,6 +40,9 @@ $app->singleton(
 	'Illuminate\Contracts\Debug\ExceptionHandler',
 	'App\Exceptions\Handler'
 );
+$app->singleton(
+    'Illuminate\Html\HtmlServiceProvider'    
+);
 
 /*
 |--------------------------------------------------------------------------
