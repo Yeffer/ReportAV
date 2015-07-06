@@ -65,27 +65,8 @@
 			<td>5000000</td>                     
 		</tr>
 
-	</tbody>    
-</table>
-<table>
-		<tr>
-			<th>#</th>
-			<th>CODIGO</th>
-			<th>NOMBRE</th>
-			<th>SALARIO</th>
-			<th>VARIABLE</th>
-			<th>VALOR</th>                    
-		</tr>  
-    @foreach($datos as $key => $value)
-        <tr>
-            <td>{{ $value->id }}</td>
-            <td>{{ $value->codigo }}</td>
-            <td>{{ $value->nombre }}</td>
-            <td>{{ $value->salario }}</td>
-            <td>{{ $value->variable }}</td>
-            <td>{{ $value->valor }}</td>
-        </tr>
-    @endforeach
+	</tbody>  
+
 
 </table>
 	<ul class="pagination">
@@ -96,14 +77,7 @@
 			  <li><a href="#">4</a></li>
 			  <li><a href="#">5</a></li>
 			  <li><a href="#">&raquo;</a></li>
-			</ul>                   
-	  <!--  <ul class="list-group checked-list-box">
-				  <li class="list-group-item" data-style="button">Asesor1</li>
-				  <li class="list-group-item" data-color="success">Asesor1</li>
-				  <li class="list-group-item" data-style="button" data-color="info">Asesor1</li>
-				  <li class="list-group-item" data-color="warning">Asesor1</li>
-				  <li class="list-group-item" data-style="button" data-color="danger">Asesor1</li>
-			  </ul> -->
+			</ul>                       
 
 		</div>
 	</div>    

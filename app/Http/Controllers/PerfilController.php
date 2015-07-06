@@ -1,4 +1,13 @@
-<?php namespace App\Http\Controllers;
+<?php
+namespace App\Http\Controllers;
+
+use App\Http\Requests\FormTestValidation;
+use App\Models\DatosPersonal;
+use Request;
+use Auth;
+use Session;
+use DB;
+
 
 class PerfilController extends Controller {
 
@@ -31,18 +40,20 @@ class PerfilController extends Controller {
 
 	public function index()
 	{
-	//	return View('rrhh.perfil');
-		
+		return View('rrhh.perfil');
+	/*	$term =  Request::all();
 
-    return View('rrhh.perfil')->with('datos', $term);
-
+    //$terms = $this->$term->with('perfil')->all();
+ 
+    return View('rrhh.perfil')->with('$term', $term);
+    
 	
 		foreach ($queries as $query)
 		{
 		    $results[] = [ 'value' => $query->codigo, 'id' => $query->id,'codigo' => $query->codigo,'tipo' => $query->tipo,'descripcion' => $query->descripcion,'salarioBasico' => $query->salarioBasico,'pago' => $query->pago];
 		}        
 	        return response()->json($results);
-
+*/
 	}   
 
  	/*public function SearchUser(){	

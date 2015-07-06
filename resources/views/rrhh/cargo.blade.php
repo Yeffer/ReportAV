@@ -7,8 +7,8 @@
 </div> -->
 
 <?php if (Session::get('error')) { ?>
-<div class="alert alert-danger" >
-    <?php echo Session::get('error') ?>
+    <div class="alert alert-danger" >
+<?php echo Session::get('error') ?>
 </div>
 <?php } ?>   
   <section id="contact" class="container">
@@ -22,8 +22,7 @@
                 </ul>
                 <hr class="star-primary">
             </div>
-        </div>
-        
+        </div>        
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -70,7 +69,7 @@
                                     <input class="form-control" name="data[variable]" type="text" id="variable" placeholder="Variable"/>
                                 </div>
                             </div> 
-                                  <div class="form-group col-xs-12 floating-label-form-group controls">                            
+                                <div class="form-group col-xs-12 floating-label-form-group controls">                            
                                 <label class="col-md-4 control-label" type="text"  data-icon="u">Pago Perfil:</label>
                                 <div class="col-md-6">                                                                                                                                                                                                                                                                                
                                     <input class="form-control" name="data[pago]" type="text" id="pago" placeholder="Pago De Perfil"/>
@@ -82,44 +81,38 @@
                                         <input type="submit" name="Registro" value="GUARDAR" class="btn btn-primary"/>                                           
                                     </div>
                                 </div>                                                           
-                           </form>                     
-                        </div>
-                    </div>
-                </div>   
-
-    <!--    <div class="table-responsive"> 
-    <table class="table table-condensed table-bordered table-hover table-striped">
-     <thead>
-        <tr>
-            <th>#</th>
-            <th>CODIGO</th>
-            <th>NOMBRE</th>
-            <th>SALARIO</th>
-            <th>VARIABLE</th>
-            <th>VALOR</th>                    
-        </tr>                 
-    </thead>
-     <tbody>
-        <tr>
-            <td>1</td>
-            <td>PPCRC–LCS01</td>
-            <td>LÏDER DE CENTRO DE CONTACTO Y SULUCION- NIVEL 01</td> 
-            <td>4200000</td>            
-            <td>1200000</td>           
-            <td>5000000</td>                    
-        </tr>
-         <tr>
-            <td>3</td>
-            <td>PPCRC–LCS03</td>
-            <td>LÏDER DE CENTRO DE CONTACTO Y SULUCION- NIVEL 03</td> 
-            <td>4200000</td>            
-            <td>1200000</td>           
-            <td>5000000</td>                     
-        </tr>
-    </tbody>        
-</table>     
-</div>-->
-
+                           </form>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>CODIGO</th>
+                            <th>PERFIL</th>
+                            <th>DETALLE</th>
+                            <th>BASICO</th>
+                            <th>VARIABLE</th>
+                            <th>PAGO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        @foreach ($queries as $querie) {
+                        echo "<tr>";                            
+                            echo "<td>" . {{ $querie->id }} . "</td>";
+                            echo "<td>" . {{ $querie->codigo}} . "</td>";
+                            echo "<td>" . {{ $querie->tipo}} . "</td>";
+                            echo "<td>" . {{ $querie->descripcion }} . "</td>";
+                            echo "<td>" . {{ $querie->salarioBasico }} . "</td>";
+                            echo "<td>" . {{ $querie->variable}} . "</td>";
+                            echo "<td>" . {{ $querie->pago}} . "</td>";                                                              
+                        echo "</tr>";
+                        @endforeach
+                        }
+                        ?>  
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>   
  </section>            
 @endsection
-

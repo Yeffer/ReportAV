@@ -92,8 +92,8 @@ class CargoController extends Controller {
         $codigo->save();
         
         return View('rrhh.cargo');
-        //$codigo = codigo::all();
+        $codigo = codigo::all();
         //return View::make('rrhh/perfil')->with('codigo', $codigo);
    
     }
-} 
+}
