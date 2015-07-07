@@ -21,18 +21,18 @@
 					<form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/login') }}">
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-						<div class="form-group">
-							<label class="col-md-4 control-label">Correo Electronico</label>
-							<div class="col-md-6">
-								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-md-4 control-label">Contraseña</label>
-							<div class="col-md-6">
-								<input type="password" class="form-control" name="password">
-							</div>
+						<div class="input-group input-group-lg col-md-6 col-md-offset-4">							
+						  <span class="input-group-addon">						  	
+						    <span class="glyphicon glyphicon-envelope"></span>
+						  </span>
+						  <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Correo Electrónico">							
+						</div><br>					
+					
+						<div class="input-group input-group-lg col-md-6 col-md-offset-4">							
+						  <span class="input-group-addon">						  	
+						    <span class="glyphicon glyphicon-lock"></span>
+						  </span>
+						  	<input type="password" class="form-control" name="password" placeholder="Contraseña">
 						</div>
 
 						<div class="form-group">
